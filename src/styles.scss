@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    @apply bg-gray-100;
+}
+
+@layer components{
+    .btn {
+        @apply py-2.5 px-6 rounded-lg;
+    }    
+
+  .btn-sm {
+    @apply py-1.5 px-3 text-sm font-medium;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .btn-rounded {
+    @apply rounded-full;
+  }
+
+  .btn-outline-primary {
+    @apply bg-blue-50 text-blue-600 border border-blue-600 hover:text-white hover:bg-blue-700;
+  }
+
+  .btn-primary {
+    @apply text-white bg-blue-600 hover:bg-blue-700;
+  }
+  .btn-success {
+    @apply text-white bg-green-600 hover:bg-green-700;
+  }
+
+  .btn-secondary {
+    @apply text-white bg-gray-600 hover:bg-gray-700;
+  }
+
+  .btn-danger {
+    @apply text-white bg-red-600 hover:bg-red-700;
+  }
+}
